@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundoapp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btSobre"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fundobotao"
+            android:backgroundTint="@color/black"
+            android:onClick="abrirSobre"
+            android:text="SOBRE"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCartilhas" />
+
+        <Button
+            android:id="@+id/btCartilhas"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fundobotao"
+            android:backgroundTint="@color/black"
+            android:onClick="abrirCartilhas"
+            android:text="CARTILHAS"
+            app:layout_constraintBottom_toTopOf="@+id/btSobre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btDenuncia" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/fundobotao"
+            android:backgroundTint="@color/black"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/txApoiadores"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btSobre" />
+
+        <Button
+            android:id="@+id/btDenuncia"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fundobotao"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="abrirDenuncia"
+            android:text="Denúncia"
+            app:layout_constraintBottom_toTopOf="@+id/btCartilhas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txApoiadores"
+            android:layout_width="161dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginBottom="20dp"
+            android:autoText="false"
+            android:text="APOIADORES"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="116dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ministeriopublico" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="134dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:srcCompat="@drawable/oab" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="116dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:srcCompat="@drawable/sistemas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

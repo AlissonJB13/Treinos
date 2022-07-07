@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sobreActivity3">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SOBRE"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="374dp"
+        android:layout_height="584dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+
+        <TextView
+            android:id="@+id/txSobre"
+            android:layout_width="351dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="A tecnologia de informação e comunicação (TIC) faz parte do cotidiano de
+milhões de usuários cada vez mais. Atualmente as pessoas sofreram um impacto nas
+suas vidas devido ao uso das tecnologias, que pautam a forma de se relacionar, o lazer, a
+economia, e isso pode influenciar até o modo como se vive. Mas, ao usar as tecnologias
+digitais, como a Internet, o usuário não tem a percepção de como isso acontece.
+A Internet, rede mundial que oferece diversos serviços comuns aos seus
+usuários, está presente no cotidiano de grande parte da população mundial e,
+provavelmente para estas pessoas, seria muito difícil imaginar como seria a vida sem
+poder usufruir das diversas facilidades e oportunidades trazidas por esta tecnologia.
+A Internet é uma fonte de inúmeras oportunidades a seus usuários: é possível
+estabelecer e manter contatos com amigos e instituições de todo o planeta, de obter
+conhecimento, compartilhar informações, postar textos, fotos e vídeos, conhecer novas
+pessoas.
+Pesquisas recentes apontam que, dentre um universo de 29,7 milhões de crianças
+e adolescentes brasileiros de 09 a 17 anos, mais de 23 milhões são usuários da Internet 1 .
+E que 20% delas já foram tratadas de forma ofensiva na Internet. Esses números alertam
+o quão importante é a instrução direcionada para crianças e adolescentes com foco no
+contexto das tecnologias digitais; entretanto, instruí-los em como ter boas ações e
+atitudes responsáveis no uso da Internet vai muito além do ensino no manuseio das novas oportunidades tecnológicas. É necessário, por exemplo, conhecer os limites,
+regras e as penalidades quando se usa as redes sociais.
+Essa proposta foi produzida tendo como principal eixo coletor de informações as
+cartilhas geradas pela entidade NIC.Br 2 , que é um núcleo de informação e coordenação
+do Ponto BR, uma entidade civil, sem fins lucrativos, que desde dezembro de 2005
+implementa as decisões e projetos do Comitê Gestor da Internet no Brasil (CGI) 3 .
+O NIC.Br elaborou documentos com informações para que pudesse servir como
+referências para diversos setores de usuários de internet do Brasil. Nas cartilhas é
+possível obter orientações, recomendações e dicas sobre como você pode, de maneira
+geral, aumentar a sua segurança na Internet, como interagir de forma ética e responsável
+com as redes sociais, entres outras.
+Infelizmente, muitas vezes, a Internet também é utilizada para exposição de
+conteúdos inapropriados, contato com pessoas desconhecidas e mal-intencionadas,
+acesso a julgamentos indevidos, ofensas, preconceito e discriminação. É necessário ter-
+se a consciência da importância de que a Internet tem em nosso cotidiano e as
+preocupações em relação ao uso adequado dela por jovens e adolescentes.
+Para garantir um final feliz nas conexões no mundo virtual é necessário respeitar
+regras, modos e sobretudo as atitudes que podem infringir as leis e causar problemas
+sérios."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.073" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fundobotao"
+        android:backgroundTint="@color/black"
+        android:onClick="voltarMenuPrincipal"
+        android:text="MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
